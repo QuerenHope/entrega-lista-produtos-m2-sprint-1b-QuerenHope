@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 55px;
+    box-shadow: 0px 4px 40px -20px rgba(0, 0, 0, 0.25);
+
+}
+
+.logo h1 {
+    font-size: 16px;
+    font-weight: 800;
+    
+}
+
+.tamanho {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: white;
+    width: 100%;
+}
+
+
+.filtersContainer {
+    display: flex;
+    /* justify-content: space-evenly;
+    align-items: center;
+    padding: 30px; */
+}
+
+.estiloGeralBotoes{
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9rem;
+    width: 128px;
+    height: 52px;
+    margin-left: 16px;
+}
+
+#inputPesquisa {
+    display: flex;
+    padding: 0px 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #F1F3F5;
+    border: none;
+    height: 50px;
+    width: 324px;
+}
+
+#buttonBuscar {
+    width: 59px;
+    height: 54px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 5px;
+    background-color: #12B886;
+
+}
+
+#lupa {
+    font-size: 20px;
+    color: white;
+    background-color: #12B886;
+}
+
+.estiloGeralBotoes--mostrarTodos {
+    color: white;
+    background-color: #12B886;
+}
+
+.estiloGeralBotoes--filtrarHortifruti {
+    background-color: #12b886be ;
+    color: white;
+}
+
+.containerBuscaPorNome {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.campoBuscaPorNome {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+.estiloGeralBotoes--botaoBuscaPorNome {
+    background-color: rgb(17, 17, 20);
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+/* CONTEÚDO */
+
+
+.containerListaProdutos {
+    
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+.containerListaProdutos ul {
+    display: flex;
+    list-style: none;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: flex-start;
+}
+
+.containerListaProdutos ul li {
+    display: flex;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    transition: ease-in-out .1s;
+    width: 20%;
+    height: 25%;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.containerListaProdutos ul li:hover {
+    box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+}
+
+.containerListaProdutos ul li img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.containerListaProdutos ul li h3 {
+    display: flex;
+    margin: 5% 0% 5% 2%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.containerListaProdutos ul li p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5% 0% 5% 2%;
+
+}
+.containerListaProdutos ul li span {
+    margin: 5% 0% 5% 2%;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* PREÇO TOTAL */
+.containerPrecoTotal{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    text-align: center;
+    
+}
+.containerPrecoTotal p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+
+}
+.containerPrecoTotal span{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+}

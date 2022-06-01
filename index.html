@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lista de Produtos</title>
+</head>
+
+<body>
+    <div class="logo">
+
+        <h1>Shop Now</h1>
+
+    </div>
+    <div class="tamanho">
+        <header>
+            <div id="filters" class="filtersContainer">
+
+                <button class="link estiloGeralBotoes estiloGeralBotoes--mostrarTodos" id="botaoTodos">Todos</button>
+                <button class="link estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti"
+                    id="botaoHotifruti">Hortifruti</button>
+                <button class="link estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti"
+                    id="botaoPanificadora">Panificadora</button>
+                <button class="link estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti"
+                    id="botaoLaticinios">Laticinios</button>
+            </div>
+            <div class="containerBuscaPorNome">
+
+                <input type="text" placeholder="Nome do produto" class="campoBuscaPorNome" id="inputPesquisa" value="">
+                <button onclick="busca()" class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"
+                    id="buttonBuscar"> <i class="fa-solid fa-magnifying-glass" id="lupa"></i> </button>
+
+            </div>
+
+        </header>
+
+        <main>
+            <div class="containerPrecoTotal">
+                <p>Preço total: </p>
+                <span id="precoTotal">00.00</span>
+            </div>
+
+            <div class="containerListaProdutos" id="listProdutos">
+                <ul>
+
+                </ul>
+            </div>
+
+        </main>
+    </div>
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="https://kit.fontawesome.com/97d6b33b62.js" crossorigin="anonymous"></script>
+    <script src="src/js/script.js"></script>
+
+</body>
+
+</html>
